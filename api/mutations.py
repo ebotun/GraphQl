@@ -16,7 +16,7 @@ def create_post_resolver(obj, info, title, description):
             "success": True,
             "post": post.to_dict()
         }
-    except ValueError:  # date format errors
+    except ValueError:
         payload = {
             "success": False,
             "errors": [f"Incorrect date format provided. Date should be in "
@@ -37,7 +37,7 @@ def update_post_resolver(obj, info, id, title, description):
             "success": True,
             "post": post.to_dict()
         }
-    except AttributeError:  # todo not found
+    except AttributeError:
         payload = {
             "success": False,
             "errors": ["item matching id {id} not found"]
