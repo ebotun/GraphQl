@@ -6,7 +6,7 @@ def listPosts_resolver(obj, info):
         print(posts)
         payload = {
             "success": True,
-            "posts": posts
+            "post": posts
         }
     except Exception as error:
         payload = {
