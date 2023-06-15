@@ -18,6 +18,8 @@ Python implementation of Graphql
 
 ### Database (Postgresql)
 
+Create a database called `graphql`
+
     flask shell
     >>> from app import db
     >>> db.create_all()
