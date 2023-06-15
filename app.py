@@ -22,10 +22,6 @@ schema = make_executable_schema(
     type_defs, query, mutation, snake_case_fallback_resolvers
 )
 
-@app.route("/graphql", methods=["GET"])
-def graphql_playground():
-    return HTTP_STATUS_200_OK, 200
-
 @app.route("/graphql", methods=["POST"])
 def graphql_server():
     data = request.get_json()
