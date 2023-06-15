@@ -16,10 +16,34 @@ Python implementation of Graphql
 
     pip install flask ariadne flask-sqlalchemy flask-cors requests psycopg2-binary 
 
+### Database (Postgresql)
 
-## Run Server
+    flask shell
+    >>> from app import db
+    >>> db.create_all()
+    >>> exit()
+
+
+
+### Run Server
 
     flask run
 
 Api is accessible on localhost:5000
+
+
+## Populate the database
+
+### Run the .py in /requests
+
+create -> createPost.py
+delete -> deletePost.py
+update -< updatePost.py
+
+get post by id -> getPost.py
+list all posts -> listPosts.py
+
+
+
+
 
