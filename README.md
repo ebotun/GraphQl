@@ -39,11 +39,15 @@ Api is accessible on localhost:5000
 ### Run the .py in /requests
 
 create -> createPost.py
+
 delete -> deletePost.py
+
 update -< updatePost.py
 
 get post by id -> getPost.py
+
 list all posts -> listPosts.py
+
 
 
 
