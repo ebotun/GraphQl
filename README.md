@@ -42,7 +42,7 @@ create -> createPost.py
 
 delete -> deletePost.py
 
-update -< updatePost.py
+update -> updatePost.py
 
 get post by id -> getPost.py
 

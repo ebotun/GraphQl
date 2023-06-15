@@ -9,7 +9,3 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:root@localhost:54
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
-
-@app.route('/')
-def test():
-    return 200
